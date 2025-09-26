@@ -8,7 +8,7 @@ const jokeDisplaySection = document.getElementById('app')
 
 async function fetchJokes() {
     //fetch() by default send a GET request 
-    const response = await fetch ('http://localhost:2222/jokes')
+    const response = await fetch ('https://testing-githubpush.onrender.com/jokes')
     const jokes = await response.json()
     createJokes(jokes)
 }
@@ -56,7 +56,7 @@ form.addEventListener('submit', async (event)=>{
     console.log(userJoke)
 
     //Now I need to send a POST request to my server
-    const response = await fetch('http://localhost:2222/jokes',{
+    const response = await fetch('https://testing-githubpush.onrender.com/jokes',{
         headers:{
                 "Content-Type": "application/json"
         },
