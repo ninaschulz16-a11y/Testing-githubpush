@@ -1,0 +1,13 @@
+.entry-container {
+  border: 1px solid #93d496;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .entry-container {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
